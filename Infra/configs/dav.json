@@ -1,0 +1,18 @@
+{
+    "shared": {
+
+        "postgres_url": "postgres://docker:docker@localhost:5400/postgres",
+
+    },
+    "sites-checker-service": {
+        "postgres_url_sites_checker_service": "postgres://docker:docker@localhost:5400/sites_checker_service",
+        "data_src_folfer": "sites-storage/requests",
+        "data_src_url": "https://elementor-pub.s3.eu-central-1.amazonaws.com/Data-Enginner/Challenge1/request1.csv",
+        "virus_total_src_folder": "sites-storage/reports",
+        "vt_ip_base_url": "https://www.virustotal.com/api/v3/ip_addresses",
+        "vt_domains_base_url": "https://www.virustotal.com/api/v3/domains",
+        "vt_urls_base_url": "https://www.virustotal.com/api/v3/urls",
+        "job_interval": 1800,
+        "x-apikey": "6bc85c06f769fe6e606eaa4e47648723bbc5f3e42bb627dc327b867b5c7f014c"
+    }
+}

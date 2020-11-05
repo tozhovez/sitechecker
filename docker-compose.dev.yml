@@ -1,0 +1,38 @@
+version: '3.7'
+
+networks:
+  sites-checker:
+    name: sites-checker
+    driver: bridge
+
+services:
+
+#####################################################################
+#                       services                                    #
+#####################################################################
+  sites-checker-service:
+    hostname: sites-checker-service
+    container_name: sites-checker-service
+    environment:
+      - CONSUL_HOST=consul
+      - RUNS_IN_DOCKER=1
+      - REQUESTS_PATH=/root/sites-storage/requests
+      - REPORTS_PATH=/root/sites-storage/reports
+      - POSTGRES_URL="postgres://docker:docker@localhost:5400/sites_checker_service"
+      - REDIS_HOST=redis
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${HOME}/sites-storage:/root/sites-storage
+      - ${HOME}/sites-storage/reports:/root/sites-storage/reports
+      - ${HOME}/sites-storage/requests:/root/sites-storage/requests
+    depends_on:
+      - "postgresql"
+      - "consul"
+      - "redis"
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "5021:5021"
+    networks:
+      - sites-checker
+  

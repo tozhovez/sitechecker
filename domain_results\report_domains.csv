@@ -1,0 +1,11 @@
+domain;Harmless;Malicious;Suspicious;Undetected;Link
+www.elementor.com;74;0;0;8;https://virustotal.com/gui/domain/www.elementor.com/detection
+www.textspeier.de;80;6;0;8;https://virustotal.com/gui/domain/www.textspeier.de/detection
+www.facebook.com;87;0;0;7;https://virustotal.com/gui/domain/www.facebook.com/detection
+www.google.com;86;0;0;8;https://virustotal.com/gui/domain/www.google.com/detection
+www.wordpress.org;85;0;0;9;https://virustotal.com/gui/domain/www.wordpress.org/detection
+raneevahijab.id;74;2;1;0;https://virustotal.com/gui/domain/raneevahijab.id/detection
+boots.fotopyra.pl;82;2;0;8;https://virustotal.com/gui/domain/boots.fotopyra.pl/detection
+stackoverflow.com;86;0;0;8;https://virustotal.com/gui/domain/stackoverflow.com/detection
+www.family-partners.fr;83;1;0;9;https://virustotal.com/gui/domain/www.family-partners.fr/detection
+boots.fotopyra.pl;82;2;0;8;https://virustotal.com/gui/domain/boots.fotopyra.pl/detection
