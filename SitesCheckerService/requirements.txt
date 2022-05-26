@@ -1,5 +1,5 @@
 sanic==20.9.0
-ujson==3.2.0
+ujson==5.2.0
 #asyncio==3.4.3
 #aiohttp==3.6.2
 #APScheduler==3.6.3
