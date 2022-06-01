@@ -11,7 +11,7 @@ tenacity==5.0.4
 injector==0.17.0
 apscheduler==3.6.3
 msgpack==0.6.2
-httpx==0.11.1
+httpx==0.23.0
 python-socketio==4.3.0
 kombu==4.6.3
 docker==4.0.2
